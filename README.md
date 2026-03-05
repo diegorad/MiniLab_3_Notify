@@ -1,7 +1,7 @@
 # MiniLab 3 Notify (parameter's values)
 Improved Ableton MIDI remote script for the Arturia MiniLab 3 controller.
 
-The provided "DAW" mode in the MiniLab 3 configures its encoders as abolute knobs. The issue is that when changing parameters using these knobs, the currently mapped parameter value *jumps* to the absolute value of the knob, which is far from ideal. Here I provide a custom MIDI remote script which fixes this issue. With this script Ableton notifies the Minilab 3 the values of the currently selected device parameters and the MiniLab 3 alings the encoders to these values.
+The provided "DAW" mode in the MiniLab 3 configures its encoders as abolute knobs. The issue is that when changing parameters using these encoders, the parameter value *jumps* to the current absolute value of the knob, which is far from ideal. Here I provide a custom MIDI remote script which fixes this issue. With this script Ableton notifies the Minilab 3 the parameter values of the currently selected device and the MiniLab 3 re-alings the encoders to these values, in other words, propper encoder behavior.
 
 Installation
 ------------
@@ -15,3 +15,7 @@ Installation
 1.	Open Live and enable **Minilab 3 notify** as a Control Surface
 
 	In Live’s Preferences go to the *Link, Tempo & MIDI* tab and select *MiniLab 3 Notify* from the dropdown list of available Control Surfaces. As MIDI Input select `MiniLab3 (MIDI)`. As MIDI Output select `MiniLab3 (MIDI)`. *Takeover mode* can be set to None.
+
+
+----------------
+You might be also interested in [Minilab_3_banks](https://github.com/diegorad/Minilab_3_banks): an extension of this remote script which allows users to navigate all parameter banks within a device and control them with the MiniLab 3.
